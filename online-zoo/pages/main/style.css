@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: #E5E5E5;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  width: 1600px;
+}
+
+.wrapper {
+  margin: 0 auto;
+  background-image: url('/assets/images/giant-panda.jpg');
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: 100%;
+  background-color: #FFF;
+}
+
+.header {
+  justify-content: center;
+  height: 80px;
+  background: #000000;
+  backdrop-filter: blur(2px);
+  font-family: 'Roboto';
+  color: #FFF;
+}
+
+.header-container {
+  justify-content: flex-start;
+  width: 1160px;
+  height: 80px;
+  color: #FFF;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.button-logo {
+  width: 1000px;
+  position: relative;
+  width: 82px;
+  height: 52px;
+  margin-right: 50px;
+  color: #FFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.logo-title {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 19px;
+  line-height: 120%;
+  margin: 0;
+}
+
+.logo-title::before {
+  content: "";
+  position: absolute;
+  top: 22px;
+  left: 11px;
+  width: 21px;
+  height: 21px;
+  background-image: url('/assets/icons/bamboo.svg');
+  background-repeat: no-repeat;
+}
+
+.header-nav-list {
+  width: 910px;
+  display: flex;
+  list-style: none;
+}
+
+.header-nav-item {
+  margin-right: 58px;
+  transition: .6s;
+}
+
+.header-nav-link {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.header-nav-link-active {
+  color: #F9804B;
+}
+
+.header-container-copyright {
+  width: ;
+  text-align: right;
+}
+
+.section-watch {
+  height: 700px;
+}
