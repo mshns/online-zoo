@@ -71,7 +71,7 @@ body {
   left: 9px;
   width: 21px;
   height: 21px;
-  background-image: url('/online-zoo/assets/icons/bamboo.svg');
+  background-image: url(../../assets/icons/bamboo.svg);
   background-repeat: no-repeat;
 }
 
@@ -119,7 +119,7 @@ body {
 
 .section-watch {
   height: 780px;
-  background-image: url(/online-zoo/assets/images/giant-panda.jpg);
+  background-image: url(../../assets/images/giant-panda.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -191,7 +191,7 @@ body {
   height: 613px;
   right: 0;
   top: -128px;
-  background-image: url(/online-zoo/assets/images/flower.png);
+  background-image: url(../../assets/images/flower.png);
   background-repeat: no-repeat;
 }
 
