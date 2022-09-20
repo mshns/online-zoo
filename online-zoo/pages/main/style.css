@@ -164,7 +164,7 @@ body {
 }
 
 .page-button {
-  width: 292px;
+  width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   border-radius: 25px;
@@ -224,3 +224,158 @@ body {
   font-size: 24px;
   line-height: 120%;
 }
+
+.section-favorite {
+  position: relative;
+  margin-top: 160px;
+}
+
+.section-favorite::before {
+  content: "";
+  position: absolute;
+  width: 292px;
+  height: 460px;
+  left: 0;
+  bottom: 0;
+  background-image: url(../../assets/images/palm.png);
+  background-repeat: no-repeat;
+}
+
+.section-favorite::after {
+  content: "";
+  position: absolute;
+  width: 368px;
+  height: 275px;
+  right: 0;
+  bottom: 0;
+  background-image: url(../../assets/images/strelitzia.png);
+  background-repeat: no-repeat;
+}
+
+.section-container-favorite {
+  position: relative;
+  justify-content: center;
+}
+
+.button-arrow {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 403px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.button-arrow-left {
+  left: -82px;
+}
+
+.button-arrow-right {
+  right: -82px;
+}
+
+.slider {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.slide {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  width: 366px;
+  height: 426px;
+  border-radius: 5px;
+  background-color: #FFF;
+  margin-bottom: 20px;
+  background-repeat: no-repeat;
+}
+
+.slide::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  padding: 1px;
+  background: linear-gradient(113.96deg, #FA6F32 1.49%, #FE9013 101.44%);
+  -webkit-mask:
+     linear-gradient(#fff 0 0) content-box,
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.slide-description {
+  margin-bottom: 14px;
+  margin-left: 16px;
+  color: #000;
+}
+
+.slide-title {
+  margin: 0;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.slide-subtitle {
+  margin-top: -3px;
+  margin-bottom: 0;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 120%;
+}
+
+.slide-icon {
+  margin-bottom: 13px;
+  margin-right: 12px;
+}
+
+.slide-pandas {
+  background-image: url(../../assets/images/pandas.jpg);
+}
+
+.slide-eagles {
+  background-image: url(../../assets/images/eagles.jpg);
+}
+
+.slide-gorillas {
+  background-image: url(../../assets/images/gorillas.jpg);
+}
+
+.slide-sloth {
+  background-image: url(../../assets/images/sloth.jpg);
+}
+
+.slide-cheetahs {
+  background-image: url(../../assets/images/cheetahs.jpg);
+}
+
+.slide-penguins {
+  background-image: url(../../assets/images/penguins.jpg);
+}
+
+.section-button {
+  width: 298px;
+  height: 54px;
+  margin: 60px 0 100px;
+  background: #FE9013;
+  border-radius: 25px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  padding-top: 2px;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  border: none;
+}
+
+
