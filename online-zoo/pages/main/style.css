@@ -225,12 +225,12 @@ body {
   line-height: 120%;
 }
 
-.section-favorite {
+.section-pets {
   position: relative;
   margin-top: 160px;
 }
 
-.section-favorite::before {
+.section-pets::before {
   content: "";
   position: absolute;
   width: 292px;
@@ -241,7 +241,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-favorite::after {
+.section-pets::after {
   content: "";
   position: absolute;
   width: 368px;
@@ -252,7 +252,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.section-container-favorite {
+.section-container-pets {
   position: relative;
   justify-content: center;
 }
@@ -378,4 +378,112 @@ body {
   border: none;
 }
 
+.section-friend {
+  background: linear-gradient(315.75deg, rgba(254, 210, 144, 0.7) 30.06%, #FEBDAB 100.95%, rgba(254, 210, 144, 0.7) 106.36%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%), linear-gradient(315.75deg, rgba(254, 189, 171, 0.74) 30.06%, rgba(243, 169, 248, 0.66) 50.74%, #E0D8F0 80.49%, #EAF7FE 127.9%, #EAF7FE 149.54%);
+  opacity: 0.9;
+}
 
+.section-container-friend {
+  flex-direction: column;
+  align-items: center;
+  background: rgba(253, 253, 255, 0.52);
+  backdrop-filter: blur(2px);
+  border-radius: 20px;
+  margin: 69px 0 100px;
+}
+
+.section-friend-title {
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #FE9013;
+  margin-bottom: 0;
+}
+
+.section-friend-subtitle {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 120%;
+  color: #333B41;
+  margin-left: 38px;
+  margin-bottom: 42px;
+}
+
+.friend-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+  color: #333B41;
+  margin-left: 38px;
+}
+
+.content-bold {
+  font-weight: 500;
+  margin-bottom: -5px;
+}
+
+.friend-infographic-title {
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 130%;
+  color: #333B41;
+  margin-top: 42px;
+}
+
+.friend-infographic {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-top: 4px;
+}
+
+.friend-infographic-card {
+  width: 168px;
+}
+
+.card-image-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 168px;
+  height: 168px;
+  background: #FFF;
+  border-radius: 5px;
+  margin-bottom: 30px;
+}
+
+.card-image-container::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 5px;
+  padding: 1px;
+  background: linear-gradient(113.96deg, #FA6F32 1.49%, #FE9013 101.44%);
+  -webkit-mask:
+     linear-gradient(#fff 0 0) content-box,
+     linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+.card-content {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #333B41;
+}
+
+.link-content {
+  color: #333B41;
+  text-decoration: none;
+  border-bottom: 1px solid #FE9013;
+}
+
+.card-separator {
+  margin: 62px 30px;
+}
+
+.button-section-friend {
+  margin: 45px 0 60px;
+}
