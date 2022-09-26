@@ -48,7 +48,6 @@ body {
   background: #4B9200;
 }
 
-
 .button-logo {
   position: relative;
   width: 82px;
@@ -354,6 +353,15 @@ body {
   color: #929699;
   padding-left: 8px;
   outline: none;
+}
+
+.donate-form-another::-webkit-outer-spin-button,
+.donate-form-another::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.donate-form-another[type=number] {
+  -moz-appearance: textfield;
 }
 
 .period-container {

@@ -183,6 +183,7 @@ body {
   text-decoration: none;
   position: relative;
   overflow: hidden;
+  margin: 0 auto;
   width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -331,14 +332,13 @@ body {
 .slide {
   position: relative;
   display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+  flex-wrap: wrap;
   width: 366px;
   height: 426px;
   border-radius: 5px;
   background-color: #FFF;
   margin-bottom: 20px;
-  background-repeat: no-repeat;
+  overflow: hidden;
 }
 
 .slide::before {
@@ -347,6 +347,8 @@ body {
   inset: 0;
   border-radius: 5px;
   padding: 1px;
+  overflow: hidden;
+  z-index: 100;
   background: linear-gradient(113.96deg, #FA6F32 1.49%, #FE9013 101.44%);
   -webkit-mask:
      linear-gradient(#fff 0 0) content-box,
@@ -355,14 +357,33 @@ body {
           mask-composite: exclude;
 }
 
+.slide-image {
+  position: relative;
+  z-index: 0;
+  width: 366px;
+  height: 366px;
+  transition: .5s ease-in-out;
+}
+
 .slide-description {
-  margin-bottom: 14px;
-  margin-left: 16px;
+  position: relative;
+  z-index: 50;
   color: #000;
+  width: 366px;
+  height: 60px;
+  background: #FFF;
+  background-image: url(../../assets/icons/banana-bamboo.svg);
+  background-repeat: no-repeat;
+  background-position: 96% center;
+}
+
+.slide-description-meet {
+  background-image: url(../../assets/icons/meet-fish.svg);
+  background-position: 97% 40%;
 }
 
 .slide-title {
-  margin: 0;
+  margin: 8px 0 0 16px;
   font-weight: 500;
   font-size: 16px;
   line-height: 140%;
@@ -370,40 +391,45 @@ body {
 }
 
 .slide-subtitle {
-  margin-top: -3px;
-  margin-bottom: 0;
+  margin: -2px 0 0 16px;
   font-weight: 300;
   font-size: 15px;
   line-height: 120%;
 }
 
-.slide-icon {
-  margin-bottom: 13px;
-  margin-right: 12px;
+.slide-description-hover {
+  position: absolute;
+  width: 100%;
+  left: 0; bottom: -30px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: rgb(0, 0, 0, .5);;
+  padding: 10px;
+  transition: .5s ease-in-out;
 }
 
-.slide-pandas {
-  background-image: url(../../assets/images/pandas.jpg);
+.slide-title-hover {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin: 0;
 }
 
-.slide-eagles {
-  background-image: url(../../assets/images/eagles.jpg);
+.slide-subtitle-hover {
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 140%;
+  margin: 0;
 }
 
-.slide-gorillas {
-  background-image: url(../../assets/images/gorillas.jpg);
+.slide:hover .slide-image {
+  transform: scale(1.05);
 }
 
-.slide-sloth {
-  background-image: url(../../assets/images/sloth.jpg);
-}
-
-.slide-cheetahs {
-  background-image: url(../../assets/images/cheetahs.jpg);
-}
-
-.slide-penguins {
-  background-image: url(../../assets/images/penguins.jpg);
+.slide:hover .slide-description-hover {
+  bottom: 60px;
 }
 
 .section-button {
