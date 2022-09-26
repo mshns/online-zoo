@@ -44,6 +44,10 @@ body {
   cursor: pointer;
 }
 
+.button:active::before {
+  background: #4B9200;
+}
+
 .button-logo {
   position: relative;
   width: 82px;
@@ -81,9 +85,8 @@ body {
 }
 
 .header-nav-item,
-.footer-nav-link {
+.footer-nav-item {
   margin-right: 58px;
-  transition: .6s;
 }
 
 .header-nav-item:nth-child(6) {
@@ -98,6 +101,13 @@ body {
   line-height: 140%;
   color: #FFFFFF;
   text-decoration: none;
+  transition: ease-in-out .3s;
+}
+
+.header-nav-link:hover,
+.footer-nav-link:hover {
+  color: #F9804B;
+  text-decoration: underline;
 }
 
 .header-nav-link-active,
@@ -107,7 +117,7 @@ body {
   -webkit-text-fill-color: transparent;
   background-clip: text;
   text-fill-color: transparent;
-  cursor: default;
+  pointer-events: none;
 }
 
 .section {
@@ -167,6 +177,12 @@ body {
 }
 
 .page-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  position: relative;
+  overflow: hidden;
   width: 298px;
   height: 54px;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
@@ -180,6 +196,22 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
+  z-index: 1;
+}
+
+.page-button::before {
+  position: absolute;
+  content: "";
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #E47209;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  z-index: -1;
+}
+
+.page-button:hover::before {
+  opacity: 1;
 }
 
 .section-backstage {
@@ -271,6 +303,14 @@ body {
   height: 62px;
   border-radius: 50%;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+}
+
+.button-arrow:hover {
+  cursor: pointer;
+}
+
+.button-arrow:active {
+  background: #4B9200;
 }
 
 .button-arrow-left {
@@ -381,6 +421,15 @@ body {
   text-transform: uppercase;
   color: #FFFFFF;
   border: none;
+  transition: .3s ease-in-out;
+}
+
+.section-button:hover {
+  background: #E47209;
+}
+
+.section-button:active {
+  background: #4B9200;
 }
 
 .section-friend {
@@ -644,6 +693,11 @@ body {
 
 .testimonial-button,
 .footer-button {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 298px;
   height: 54px;
   border-radius: 5px;
@@ -657,7 +711,31 @@ body {
   color: #FFFFFF;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
   margin: 10px 0 130px;
+  text-decoration: none;
+  z-index: 1;
 }
+
+.testimonial-button::before,
+.footer-button::before {
+  position: absolute;
+  content: "";
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background: #E47209;
+  opacity: 0;
+  transition: .3s ease-in-out;
+  z-index: -1;
+}
+
+.testimonial-button:hover::before,
+.footer-button:hover::before {
+  opacity: 1;
+}
+
+.footer-button:active::before {
+  background: #4B9200;
+}
+
 
 .footer {
   justify-content: center;
