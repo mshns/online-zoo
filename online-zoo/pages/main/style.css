@@ -339,6 +339,7 @@ body {
   background-color: #FFF;
   margin-bottom: 20px;
   overflow: hidden;
+  cursor: pointer;
 }
 
 .slide::before {
@@ -824,10 +825,30 @@ body {
   font-weight: 400;
   font-size: 16px;
   line-height: 140%;
-  color: #4B9200;
+  color: #000;
   background: #F1F3F2;
-  border: 1px solid #4B9200;
+  border: 1px solid #333B41;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.footer-form-text:focus {
+  border: 0.7px solid #4B9200;
+}
+
+.footer-form-text:invalid {
+  border: 1px solid #D31414;
+  color: #D31414;
+}
+
+.footer-form-text:valid ~ .footer-form-submit:active {
+  border: 1px solid #4B9200;
+  color: #4B9200;
+}
+
+.footer-form-text:invalid ~ .footer-form-submit {
+  color: #D31414;
+  border: 1px solid #D31414;
 }
 
 .footer-button {
