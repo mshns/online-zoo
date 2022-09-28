@@ -878,16 +878,20 @@ body {
   line-height: 140%;
   color: #FFFFFF;
   text-decoration: none;
+  transition: .2s ease-in-out;
 }
 
 .footer-socialmedia-link::before {
   content: "";
   position: absolute;
+  background-color: rgba(196, 196, 196, 0.5);
+  border-radius: 50%;
   width: 26px;
   height: 26px;
   left: -40px;
   top: -5px;
   background-repeat: no-repeat;
+  transition: .2s ease-in-out;
 }
 
 .socialmedia-facebook::before {
@@ -904,6 +908,16 @@ body {
 
 .socialmedia-youtube::before {
   background-image: url(../../assets/icons/youtube.svg);
+}
+
+.footer-socialmedia-link:active,
+.footer-socialmedia-link:hover {
+  color: #4B9200;
+}
+
+.footer-socialmedia-link:active::before,
+.footer-socialmedia-link:hover::before {
+  background-color: #4B9200;
 }
 
 .footer-nav-list {
