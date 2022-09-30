@@ -1,0 +1,197 @@
+@media (max-width: 1560px) {
+  .section-backstage::before {
+    display: none;
+  }
+}
+
+@media (max-width: 1440px) {
+  .header-container {
+    width: 940px;
+  }
+
+  .header-nav-item,
+  .footer-nav-item {
+    margin-right: 48px;
+  }
+
+  .header-nav-item:nth-child(6) {
+    margin-left: 212px;
+  }
+
+  .section-container {
+    width: 940px;
+  }
+
+  .section-watch {
+    height: 584px;
+  }
+
+  .watch-online {
+    width: 400px;
+    margin: 37px 56px 0;
+  }
+
+  .page-title {
+    font-size: 85px;
+    margin-bottom: 41px;
+  }
+
+  .page-title::before {
+    width: 367px;
+    height: 367px;
+    left: -58px;
+    top: -54px;
+  }
+
+  .section-backstage {
+    margin-top: 108px;
+  }
+
+  .section-backstage-img {
+    width: 455px;
+    height: 408px;
+  }
+
+  .section-backstage-content {
+    width: 454px;
+    margin-top: -8px;
+  }
+
+  .section-pets {
+    margin-top: 124px;
+  }
+
+  .section-pets::before {
+    width: 194px;
+    height: 202px;
+    background-image: url(../../assets/images/palm-194x202.png);
+  }
+
+  .section-pets::after {
+    width: 241px;
+    height: 180px;
+  }
+
+  .button-arrow {
+    top: 369px;
+    width: 62px;
+    height: 62px;
+  }
+
+  .button-arrow-left {
+    left: 323px;
+  }
+
+  .button-arrow-right {
+    right: 323px;
+  }
+
+  .slide {
+    width: 294px;
+    height: 354px;
+    margin-bottom: 92px;
+  }
+
+  .slide-image {
+    width: 294px;
+    height: 294px;
+  }
+
+  .slide-description {
+    background-position: 95% center;
+  }
+
+  .section-button {
+    margin: -11px 0 140px;
+  }
+
+  .section-container-friend {
+    margin: 30px 0 50px;
+  }
+
+  .section-friend-title {
+    margin: 30px 0 -10px;
+  }
+
+  .section-friend-subtitle {
+    padding-right: 10px;
+    margin-left: 48px;
+    margin-bottom: 20px;
+  }
+
+  .friend-content {
+    margin: 0 78px 0px 48px;
+  }
+
+  .content-bold {
+    margin-bottom: 10px;
+  }
+
+  .friend-infographic {
+    margin-top: 2px;
+  }
+
+  .button-section-friend {
+    margin: 55px 0 50px;
+  }
+
+  .section-container-testimonials {
+    display: inline;
+    overflow: hidden;
+  }
+
+  .section-testimonials::after {
+    content: "";
+    position: absolute;
+    width: 196px;
+    height: 325px;
+    right: 0px;
+    bottom: -96px;
+    background-image: url(../../assets/images/leav-196x325.png);
+    background-repeat: no-repeat;
+    z-index: 0;
+  }
+
+  .section-testimonial-title {
+    text-align: center;
+    margin: 100px auto 30px;
+  }
+
+  .testimonials {
+    width: 1262px;
+  }
+
+  .testimonial {
+    width: 293px;
+    height: 391px;
+    padding: 15.5px 18px 0 15.5px;
+  }
+
+  .testimonials-slider-control {
+    margin: 13px 0 48px;
+  }
+
+  .slider-control {
+    width: 390px;
+  }
+
+  .slider-control::-webkit-slider-thumb {
+    width: 75px;
+  }
+
+  .footer {
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    width: 940px;
+  }
+
+  .footer-form-fieldset {
+    margin-right: 33px;
+  }
+
+  .footer-nav-list {
+    margin-left: 96px;
+  }
+}
