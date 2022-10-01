@@ -1,0 +1,349 @@
+@media (max-width: 999px) {
+  .header-container {
+    width: 600px;
+    height: 34px;
+  }
+
+  .button-logo {
+    width: 47px;
+    height: 29px;
+    border: none;
+  }
+
+  .logo-title {
+    font-size: 12.2899px;
+    padding: 0px 0 0 1px;
+  }
+
+  .logo-title::before {
+    top: 11.5px;
+    left: 3.5px;
+    width: 13.56px;
+    height: 13.56px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .burger-menu-icon {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 10px;
+    cursor: pointer;
+  }
+
+  .burger-line1,
+  .burger-line2,
+  .burger-line3 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: ease-in-out .2s;
+  }
+
+  .burger-line1 {
+    top: 0;
+  }
+  .burger-line2 {
+    top: 4px;
+  }
+  .burger-line3 {
+    top: 8px;
+  }
+
+  .section-container {
+    width: 600px;
+  }
+
+  .section-watch {
+    height: 373px;
+  }
+
+  .watch-online {
+    width: 256px;
+    margin: -4px -4px 0;
+  }
+
+  .page-title {
+    font-size: 54.2894px;
+    margin-bottom: 41px;
+  }
+
+  .page-title::before {
+    width: 237.6px;
+    height: 237.6px;
+    left: -38px;
+    top: -38px;
+  }
+
+  .page-button {
+    margin: -48px -348px;
+  }
+
+  .section-backstage {
+    margin-top: 68px;
+  }
+
+  .section-backstage::before {
+    width: 132px;
+    height: 484px;
+    right: 0;
+    top: -74px;
+  }
+
+  .section-container-backstage {
+    justify-content: flex-start;
+  }
+
+  .section-backstage-img {
+    display: none;
+  }
+
+  .section-backstage-content {
+    width: 495px;
+  }
+
+  .section-backstage-title {
+    margin: 0 0 23px 4px;
+  }
+
+  .section-backstage-subtitle {
+    margin: 30px 0 18px 4px;
+  }
+
+  .section-pets {
+    margin-top: 62px;
+  }
+
+  .section-pets::before {
+    width: 134px;
+    height: 202px;
+    background-image: url(../../assets/images/palm-134x202.png);
+  }
+
+  .section-pets::after {
+    width: 175px;
+    height: 131px;
+  }
+
+  .button-arrow {
+    top: 343px;
+  }
+
+  .button-arrow-left {
+    left: 223px;
+  }
+
+  .button-arrow-right {
+    right: 223px;
+  }
+
+  .slider-container {
+    width: 100%;
+    height: 756px;
+    margin-bottom: 60px;
+  }
+
+  .slider {
+    width: 1230px;
+  }
+
+  .slide {
+    width: 285px;
+    height: 332px;
+    margin-bottom: 92px;
+  }
+
+  .slide-image {
+    width: 285px;
+    height: 285px;
+  }
+
+  .slide-description {
+    width: 285px;
+    height: 47px;
+    background-image: url(../../assets/images/banana-bamboo-26x29.png);
+    background-position: 96% center;
+  }
+
+  .slide-description-meet {
+    background-image: url(../../assets/images/meet-fish-38x31.png);
+    background-position: 97% center;
+  }
+
+  .slide-title {
+    margin: 6px 0 0 12px;
+    font-size: 12.5px;
+  }
+
+  .slide-subtitle {
+    margin: -1px 0 0 12px;
+    font-size: 11.69px;
+  }
+
+  .slide:hover .slide-description-hover {
+    bottom: 46px;
+  }
+
+  .section-button {
+    margin: 0px 0 100px;
+  }
+
+  .section-container-friend {
+    width: 640px;
+    margin: 20px 0 20px;
+  }
+
+  .section-friend-title {
+    margin: 10px 0 -9px;
+    font-size: 42px;
+  }
+
+  .section-friend-subtitle {
+    font-size: 22px;
+    padding-right: 10px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+
+  .friend-content {
+    margin: 0 10px 0px 20px;
+  }
+
+  .content-bold {
+    margin-bottom: 10px;
+  }
+
+  .friend-infographic-title {
+    margin-top: 30px;
+  }
+
+  .friend-infographic {
+    width: 600px;
+    margin-top: -16px;
+  }
+
+  .infographic-card-arrow::after {
+    width: 100px;
+    height: 100px;
+    right: -65px;
+    top: -18px;
+    background-image: url(../../assets/icons/big-arrow-right-green.svg);
+  }
+
+  .button-section-friend {
+    margin: 25px 0 60px;
+  }
+
+  .section-testimonials::after {
+    width: 116px;
+    height: 204px;
+    right: 0px;
+    bottom: -79px;
+    background-image: url(../../assets/images/leav.png);
+  }
+
+  .section-testimonial-title {
+    margin: 61px auto 29px;
+  }
+
+  .testimonials-container {
+    width: 100%;
+    height: 357px;
+  }
+
+  .testimonials {
+    flex-direction: column;
+  }
+
+  .testimonial {
+    width: 600px;
+    height: 109px;
+    margin-bottom: 15px;
+    padding: 15.5px 18px 0 12px;
+  }
+
+  .testimonial-content {
+    height: 38px;
+    margin-left: 6px;
+  }
+
+  .testimonials-slider-control {
+    display: none;
+  }
+
+  .testimonial-button {
+    width: 240px;
+    margin: 40px auto 70px;
+  }
+
+  .footer {
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    position: relative;
+    width: 600px;
+    margin: 12px 0;
+  }
+
+  .footer-socialmedia-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  .socialmedia-icon-link {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 20px;
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .2s ease-in-out;
+  }
+
+  .socialmedia-icon-link:hover {
+    background-color: #4B9200;
+  }
+
+  .icon-link-facebook {
+    background-image: url('../../assets/icons/facebook.svg');
+  }
+  .icon-link-twitter {
+    background-image: url('../../assets/icons/twitter.svg');
+  }
+  .icon-link-instagram {
+    background-image: url('../../assets/icons/instagram.svg');
+  }
+  .icon-link-youtube {
+    background-image: url('../../assets/icons/youtube.svg');
+  }
+
+
+  .footer-form,
+  .footer-socialmedia-list {
+    display: none;
+  }
+
+  .footer-button {
+    margin: 33px 0 52px;
+  }
+
+  .footer-nav-list {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .footer-nav-item {
+    margin-right: 37px;
+  }
+}

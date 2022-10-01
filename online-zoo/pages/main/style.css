@@ -49,7 +49,8 @@ body {
   background: #4B9200;
 }
 
-.button-logo {
+.button-logo,
+.footer-button-logo {
   position: relative;
   width: 82px;
   height: 52px;
@@ -59,7 +60,8 @@ body {
   text-decoration: none;
 }
 
-.logo-title {
+.logo-title,
+.footer-logo-title {
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 120%;
@@ -69,7 +71,8 @@ body {
   padding: 3.55px 0 0 1px;
 }
 
-.logo-title::before {
+.logo-title::before,
+.footer-logo-title::before {
   content: "";
   position: absolute;
   top: 22px;
@@ -78,6 +81,7 @@ body {
   height: 21px;
   background-image: url(../../assets/icons/bamboo.svg);
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .header-nav-list {
@@ -119,6 +123,10 @@ body {
   background-clip: text;
   text-fill-color: transparent;
   pointer-events: none;
+}
+
+.burger-menu-icon {
+  display: none;
 }
 
 .section {
@@ -230,12 +238,7 @@ body {
   top: -128px;
   background-image: url(../../assets/images/flower.png);
   background-repeat: no-repeat;
-}
-
-@media (max-width: 1560px) {
-  .section-backstage::before {
-    display: none;
-  }
+  background-size: cover;
 }
 
 .section-container-backstage {
@@ -313,6 +316,7 @@ body {
   height: 62px;
   border-radius: 50%;
   background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+  z-index: 100;
 }
 
 .button-arrow:hover {
@@ -331,10 +335,18 @@ body {
   right: -82px;
 }
 
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  height: 872px;
+  margin-bottom: 20px;
+}
+
 .slider {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  width: 1554px;
   z-index: 5;
 }
 
@@ -382,13 +394,13 @@ body {
   width: 366px;
   height: 60px;
   background: #FFF;
-  background-image: url(../../assets/icons/banana-bamboo.svg);
+  background-image: url(../../assets/images/banana-bamboo.png);
   background-repeat: no-repeat;
   background-position: 96% center;
 }
 
 .slide-description-meet {
-  background-image: url(../../assets/icons/meet-fish.svg);
+  background-image: url(../../assets/images/meet-fish.png);
   background-position: 97% 40%;
 }
 
@@ -495,7 +507,7 @@ body {
   font-size: 24px;
   line-height: 120%;
   color: #333B41;
-  margin-left: 38px;
+  margin-left: 98px;
   margin-bottom: 42px;
 }
 
@@ -504,12 +516,16 @@ body {
   font-size: 16px;
   line-height: 130%;
   color: #333B41;
-  margin-left: 38px;
+  margin-left: 98px;
 }
 
 .content-bold {
   font-weight: 500;
-  margin-bottom: -5px;
+  margin-bottom: -6px;
+}
+
+.friend-content-normal {
+  margin-right: 190px;
 }
 
 .friend-infographic-title {
@@ -521,6 +537,7 @@ body {
 }
 
 .friend-infographic {
+  width: 764px;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
@@ -528,7 +545,21 @@ body {
 }
 
 .friend-infographic-card {
+  position: relative;
   width: 168px;
+}
+
+.infographic-card-arrow::after {
+  content: "";
+  position: absolute;
+  width: 70px;
+  height: 36px;
+  right: -100px;
+  top: 62px;
+  background-image: url(../../assets/icons/big-arrow-right.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  z-index: 100;
 }
 
 .card-image-container {
@@ -570,10 +601,6 @@ body {
   border-bottom: 1px solid #FE9013;
 }
 
-.card-separator {
-  margin: 62px 30px;
-}
-
 .button-section-friend {
   margin: 45px 0 60px;
 }
@@ -591,6 +618,7 @@ body {
   bottom: -183px;
   background-image: url(../../assets/images/leav.png);
   background-repeat: no-repeat;
+  background-size: cover;
   z-index: 0;
 }
 
@@ -599,11 +627,16 @@ body {
   font-size: 36px;
   line-height: 130%;
   color: #333B41;
-  margin: 140px auto 46px;
+  margin: 141px auto 47px;
+}
+
+.testimonials-container {
+  width: 100%;
+  overflow: hidden;
 }
 
 .testimonials {
-  width: 100%;
+  width: 1160px;
   display: flex;
   justify-content: space-between;
 }
@@ -700,6 +733,7 @@ body {
   outline: none;
   -webkit-transition: .2s;
   transition: opacity .2s;
+  cursor: pointer;
 }
 
 .slider-control:before {
@@ -722,6 +756,7 @@ body {
   appearance: none;
   width: 115px;
   height: 8px;
+  margin: 10px 0;
   border-radius: 5px;
   background: #FE9013;
   cursor: pointer;
@@ -784,6 +819,10 @@ body {
   align-items: center;
   width: 1160px;
   margin: 42px 0;
+}
+
+.footer-socialmedia-icons {
+  display: none;
 }
 
 .footer-top {
