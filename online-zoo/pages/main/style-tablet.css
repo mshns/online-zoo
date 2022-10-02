@@ -297,7 +297,6 @@
     right: 0;
     display: flex;
     flex-direction: column;
-
   }
 
   .socialmedia-icon-link {
@@ -318,16 +317,18 @@
   .icon-link-facebook {
     background-image: url('../../assets/icons/facebook.svg');
   }
+
   .icon-link-twitter {
     background-image: url('../../assets/icons/twitter.svg');
   }
+
   .icon-link-instagram {
     background-image: url('../../assets/icons/instagram.svg');
   }
+
   .icon-link-youtube {
     background-image: url('../../assets/icons/youtube.svg');
   }
-
 
   .footer-form,
   .footer-socialmedia-list {
