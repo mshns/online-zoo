@@ -285,7 +285,7 @@ body {
   bottom: 0;
   background-image: url(../../assets/images/palm.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 
 .section-pets::after {
@@ -297,7 +297,7 @@ body {
   bottom: 0;
   background-image: url(../../assets/images/strelitzia.png);
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   z-index: 1;
 }
 

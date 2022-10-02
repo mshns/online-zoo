@@ -1,0 +1,247 @@
+@media (max-width: 639px) {
+  .header {
+    position: relative;
+  }
+
+  .header-container {
+    width: 300px;
+  }
+
+  .section-container {
+    width: 300px;
+  }
+
+  .section-watch {
+    height: 187px;
+  }
+
+  .watch-online {
+    width: 128px;
+    margin: 0;
+  }
+
+  .page-title {
+    font-size: 28px;
+    margin-top: 41px;
+  }
+
+  .page-title::before {
+    width: 119.09px;
+    height: 119.09px;
+    left: -19px;
+    top: -19px;
+  }
+
+  .page-button {
+    margin: 61px -171px;
+  }
+
+  .section-backstage {
+    margin-top: 113px;
+  }
+
+  .section-backstage::before {
+    width: 35px;
+    height: 217px;
+    right: -2px;
+    top: -73px;
+  }
+
+  .section-backstage-content {
+    width: 300px;
+  }
+
+  .section-backstage-title {
+    font-size: 24px;
+    margin: 0 0 -6px;
+  }
+
+  .section-backstage-subtitle {
+    margin: 20px 0 -6px 2px;
+  }
+
+  .section-pets {
+    margin-top: 21px;
+  }
+
+  .section-pets::before {
+    width: 58px;
+    height: 72px;
+  }
+
+  .section-pets::after {
+    width: 85px;
+    height: 71px;
+    right: -12px;
+    bottom: -4px;
+  }
+
+  .button-arrow {
+    display: none;
+  }
+
+  .slider-container {
+    width: 300px;
+    height: 1388px;
+    margin-bottom: 20px;
+  }
+
+  .slider {
+    width: 285px;
+    margin: 0 auto;
+  }
+
+  .slide {
+    margin-bottom: 20px;
+  }
+
+  .section-button {
+    margin: 0px 0 60px;
+  }
+
+  .section-container-friend {
+    width: 300px;
+    margin: 20px 0 20px;
+  }
+
+  .section-friend-title {
+    margin: 21px 0 -9px;
+    font-size: 24px;
+  }
+
+  .section-friend-subtitle {
+    font-size: 18px;
+    text-align: center;
+    padding: 0px;
+    margin: 20px 0 19px;
+  }
+
+  .friend-content {
+    display: none;
+  }
+
+  .friend-infographic-title {
+    font-size: 24px;
+    margin: 0 0 34px;
+  }
+
+  .friend-infographic {
+    display: block;
+    width: 168px;
+  }
+
+  .card-image-container {
+    margin: 0;
+  }
+
+  .card-content {
+    margin: 10px 0 42px;
+  }
+
+  .friend-infographic-card:nth-child(3) {
+    margin: -14px 0 -10px;
+  }
+
+  .infographic-card-arrow::after {
+    width: 90px;
+    height: 90px;
+    right: -30px;
+    top: 165px;
+    transform: rotate(85deg);
+  }
+
+  .infographic-card-arrow:nth-child(2):after {
+    width: 100px;
+    height: 100px;
+    right: -30px;
+    top: 165px;
+    transform: rotate(80deg);
+  }
+
+  .button-section-friend {
+    margin: 5px 0 40px;
+  }
+
+  .section-testimonials::after {
+    width: 51px;
+    height: 94px;
+    right: 0px;
+    bottom: -40px;
+    background-image: url(../../assets/images/leav-51x94.png);
+  }
+
+  .section-testimonial-title {
+    font-size: 24px;
+    margin: 30px auto 19px;
+  }
+
+  .testimonial {
+    width: 300px;
+    height: 109px;
+    margin-bottom: 15px;
+    padding: 11px 18px 0 12px;
+  }
+
+  .testimonial-button {
+    width: 240px;
+    margin: 30px auto 50px;
+  }
+
+  .footer {
+    margin-top: 10px;
+  }
+
+  .footer-container {
+    position: relative;
+    width: 300px;
+    margin: 17px 0;
+  }
+
+  .footer-button-logo {
+    width: 130px;
+    margin: 0 auto;
+    border: none;
+  }
+
+  .footer-logo-title::before {
+    top: 1px;
+    left: 73px;
+  }
+
+  .footer-socialmedia-icons {
+    position: absolute;
+    top: 56px;
+    left: 53px;
+    width: 194px;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .footer-button {
+    margin: 60px 0 15px;
+  }
+
+  .footer-nav-list {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .footer-bottom {
+    flex-direction: column-reverse;
+  }
+
+  .footer-copyright {
+    font-size: 15px;
+    line-height: 120%;
+  }
+
+  .footer-nav-list {
+    width: 278px;
+    margin: 16px auto;
+    justify-content: space-between;
+  }
+
+  .footer-nav-item {
+    margin: 0;
+  }
+}

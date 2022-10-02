@@ -1,4 +1,4 @@
-@media (max-width: 1560px) and (min-width: 641px) {
+@media (max-width: 1560px) and (min-width: 999px) {
   .section-backstage::before {
     display: none;
   }
