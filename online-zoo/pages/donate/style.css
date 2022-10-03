@@ -24,9 +24,11 @@ body {
   position: relative;
   flex-direction: column;
   background-color: #FFF;
+  overflow: hidden;
 }
 
 .header {
+  position: relative;
   justify-content: center;
   background: #000;
   backdrop-filter: blur(2px);
@@ -91,7 +93,6 @@ body {
 .header-nav-item,
 .footer-nav-item {
   margin-right: 58px;
-  transition: .6s;
 }
 
 .header-nav-item:nth-child(6) {
@@ -123,6 +124,10 @@ body {
   background-clip: text;
   text-fill-color: transparent;
   pointer-events: none;
+}
+
+.burger-menu-icon {
+  display: none;
 }
 
 .section {
