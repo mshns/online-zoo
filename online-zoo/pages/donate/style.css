@@ -48,7 +48,8 @@ body {
   background: #4B9200;
 }
 
-.button-logo {
+.button-logo,
+.footer-button-logo {
   position: relative;
   width: 82px;
   height: 52px;
@@ -58,7 +59,8 @@ body {
   text-decoration: none;
 }
 
-.logo-title {
+.logo-title,
+.footer-logo-title {
   font-weight: 400;
   font-size: 19.0145px;
   line-height: 120%;
@@ -68,7 +70,8 @@ body {
   padding: 3.55px 0 0 1px;
 }
 
-.logo-title::before {
+.logo-title::before,
+.footer-logo-title::before {
   content: "";
   position: absolute;
   top: 22px;

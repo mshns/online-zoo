@@ -1,0 +1,217 @@
+@media (max-width: 999px) {
+  .header-container {
+    width: 600px;
+    height: 34px;
+  }
+
+  .button-logo {
+    width: 47px;
+    height: 29px;
+    border: none;
+  }
+
+  .logo-title {
+    font-size: 12.2899px;
+    padding: 0px 0 0 1px;
+  }
+
+  .logo-title::before {
+    top: 11.5px;
+    left: 3.5px;
+    width: 13.56px;
+    height: 13.56px;
+  }
+
+  .header-nav {
+    display: none;
+  }
+
+  .burger-menu-icon {
+    display: block;
+    position: relative;
+    width: 18px;
+    height: 10px;
+    cursor: pointer;
+  }
+
+  .burger-line1,
+  .burger-line2,
+  .burger-line3 {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    transition: ease-in-out .2s;
+  }
+
+  .burger-line1 {
+    top: 0;
+  }
+  .burger-line2 {
+    top: 4px;
+  }
+  .burger-line3 {
+    top: 8px;
+  }
+
+  .header-nav-item,
+  .footer-nav-item {
+    margin-right: 48px;
+  }
+
+  .header-nav-item:nth-child(6) {
+    margin-left: 212px;
+  }
+
+  .section-container {
+    width: 600px;
+  }
+
+  .section-top {
+    height: 335px;
+    background-position: 37.1%;
+  }
+
+  .pick-and-feed {
+    margin-bottom: 45px;
+  }
+
+  .page-description-title {
+    font-size: 24px;
+    margin: 28px 0 1px;
+    padding-right: 0;
+  }
+
+  .page-subtitle {
+    margin: 20px 0 28px;
+  }
+
+  .pick-and-feed-title {
+    margin: 30px 0 22px;
+    padding-right: 0;
+  }
+
+  .pick-and-feed-subtitle {
+    text-align: center;
+    margin: 0 ;
+  }
+
+  .pick-and-feed-infographic {
+    margin: 89px 0 41px 27px;
+  }
+
+  .donate-form {
+    width: 600px;
+  }
+
+  .donate-form-fieldset {
+    margin: 0 0 15px;
+  }
+
+  .donate-form-legend {
+    margin: 0 0 7px 8px;
+  }
+
+  .donate-form-scale {
+    width: 600px;
+    padding: 0 5px;
+  }
+
+  .donate-form-scale::before {
+    left: 0;
+    width: 600px;
+  }
+
+  .donate-form-scale::after {
+    width: 524px;
+    left: 38px;
+  }
+
+  .donate-form-box:nth-child(2),
+  .donate-form-box:nth-child(3) {
+    display: none;
+  }
+
+  .donate-form-sum {
+    margin: 36px 0 48px 0px;
+  }
+
+  .donate-form-another {
+    width: 180px;
+    height: 42px;
+    margin: 0 auto 31px;
+    padding-left: 5px;
+  }
+
+  .period-container {
+    margin: 0 auto 28px;
+  }
+
+  .pick-and-feed-button {
+    margin: 0 auto 20px;
+  }
+
+  .footer-container {
+    position: relative;
+    width: 600px;
+    margin: 12px 0;
+  }
+
+  .footer-socialmedia-icons {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .socialmedia-icon-link {
+    width: 26px;
+    height: 26px;
+    margin-bottom: 20px;
+    background-color: rgba(196, 196, 196, 0.5);
+    border-radius: 50%;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: .2s ease-in-out;
+  }
+
+  .socialmedia-icon-link:hover {
+    background-color: #4B9200;
+  }
+
+  .icon-link-facebook {
+    background-image: url('../../assets/icons/facebook.svg');
+  }
+
+  .icon-link-twitter {
+    background-image: url('../../assets/icons/twitter.svg');
+  }
+
+  .icon-link-instagram {
+    background-image: url('../../assets/icons/instagram.svg');
+  }
+
+  .icon-link-youtube {
+    background-image: url('../../assets/icons/youtube.svg');
+  }
+
+  .footer-form,
+  .footer-socialmedia-list {
+    display: none;
+  }
+
+  .footer-button {
+    margin: 33px 0 52px;
+  }
+
+  .footer-nav-list {
+    margin-left: 0;
+    padding: 0;
+  }
+
+  .footer-nav-item {
+    margin-right: 37px;
+  }
+}
