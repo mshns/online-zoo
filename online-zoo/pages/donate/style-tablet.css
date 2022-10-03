@@ -1,4 +1,8 @@
 @media (max-width: 999px) {
+  .header {
+    position: fixed;
+  }
+
   .header-container {
     width: 600px;
     height: 34px;
@@ -70,6 +74,7 @@
 
   .section-top {
     height: 335px;
+    margin-top: 34px;
     background-position: 37.1%;
   }
 

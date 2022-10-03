@@ -62,9 +62,8 @@
   }
 
   .section-pets::before {
-    width: 194px;
-    height: 202px;
-    background-image: url(../../assets/images/palm-194x202.png);
+    width: 386px; height: 202px;
+    left: -192px;
   }
 
   .section-pets::after {
@@ -144,11 +143,9 @@
   }
 
   .section-testimonials::after {
-    width: 196px;
-    height: 325px;
-    right: 0px;
-    bottom: -96px;
-    background-image: url(../../assets/images/leav.png);
+    width: 326px; height: 324px;
+    right: -130px; bottom: -96px;
+    transform: rotate(-.5deg);
   }
 
   .section-testimonial-title {

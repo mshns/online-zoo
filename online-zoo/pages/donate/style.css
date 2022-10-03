@@ -30,6 +30,7 @@ body {
   justify-content: center;
   background: #000;
   backdrop-filter: blur(2px);
+  z-index: 200;
 }
 
 .header-container {

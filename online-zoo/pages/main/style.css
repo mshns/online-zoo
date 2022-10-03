@@ -24,6 +24,7 @@ body {
   position: relative;
   flex-direction: column;
   background-color: #FFF;
+  overflow: hidden;
 }
 
 .header {
@@ -31,7 +32,7 @@ body {
   justify-content: center;
   background: #000;
   backdrop-filter: blur(2px);
-  z-index: 100;
+  z-index: 200;
 }
 
 .header-container {
@@ -232,13 +233,11 @@ body {
 .section-backstage::before {
   content: "";
   position: absolute;
-  width: 204px;
-  height: 613px;
-  right: 0;
-  top: -128px;
-  background-image: url(../../assets/images/flower.png);
+  width: 301px; height: 613px;
+  right: -97px; top: -128px;
+  background-image: url(../../assets/images/flower.webp);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .section-container-backstage {
@@ -279,25 +278,21 @@ body {
 .section-pets::before {
   content: "";
   position: absolute;
-  width: 292px;
-  height: 460px;
-  left: 0;
-  bottom: 0;
-  background-image: url(../../assets/images/palm.png);
+  width: 880px; height: 460px;
+  left: -588px; bottom: 0;
+  background-image: url(../../assets/images/palm.webp);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .section-pets::after {
   content: "";
   position: absolute;
-  width: 368px;
-  height: 275px;
-  right: 0;
-  bottom: 0;
-  background-image: url(../../assets/images/strelitzia.png);
+  width: 368px; height: 275px;
+  right: 0; bottom: 0;
+  background-image: url(../../assets/images/strelitzia.webp);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
   z-index: 1;
 }
 
@@ -612,13 +607,11 @@ body {
 .section-testimonials::after {
   content: "";
   position: absolute;
-  width: 247px;
-  height: 408px;
-  right: 0;
-  bottom: -183px;
-  background-image: url(../../assets/images/leav.png);
+  width: 409px; height: 407px;
+  right: -163px; bottom: -182px;
+  background-image: url(../../assets/images/leav.webp);
+  background-size: contain;
   background-repeat: no-repeat;
-  background-size: cover;
   z-index: 0;
 }
 

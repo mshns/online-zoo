@@ -1,4 +1,8 @@
 @media (max-width: 999px) {
+  .header {
+    position: fixed;
+  }
+
   .header-container {
     width: 600px;
     height: 34px;
@@ -89,10 +93,8 @@
   }
 
   .section-backstage::before {
-    width: 132px;
-    height: 484px;
-    right: 0;
-    top: -74px;
+    width: 239px; height: 484px;
+    right: -108px; top: -74px;
   }
 
   .section-container-backstage {
@@ -120,14 +122,12 @@
   }
 
   .section-pets::before {
-    width: 134px;
-    height: 202px;
-    background-image: url(../../assets/images/palm-134x202.png);
+    width: 385px; height: 202px;
+    left: -251px; bottom: -1px;
   }
 
   .section-pets::after {
-    width: 175px;
-    height: 131px;
+    width: 175px; height: 131px;
   }
 
   .button-arrow {
@@ -240,11 +240,8 @@
   }
 
   .section-testimonials::after {
-    width: 116px;
-    height: 204px;
-    right: 0px;
-    bottom: -79px;
-    background-image: url(../../assets/images/leav.png);
+    width: 204px; height: 203px;
+    right: -88px; bottom: -79px;
   }
 
   .section-testimonial-title {

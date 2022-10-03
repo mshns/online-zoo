@@ -1,8 +1,4 @@
 @media (max-width: 639px) {
-  .header {
-    position: relative;
-  }
-
   .header-container {
     width: 300px;
   }
@@ -13,6 +9,7 @@
 
   .section-watch {
     height: 187px;
+    margin-top: 34px;
   }
 
   .watch-online {
@@ -41,10 +38,8 @@
   }
 
   .section-backstage::before {
-    width: 35px;
-    height: 217px;
-    right: -2px;
-    top: -73px;
+    width: 113px; height: 225px;
+    right: -80px; top: -77px;
   }
 
   .section-backstage-content {
@@ -65,15 +60,13 @@
   }
 
   .section-pets::before {
-    width: 58px;
-    height: 72px;
+    width: 138px; height: 72px;
+    left: -80px; bottom: 0;
   }
 
   .section-pets::after {
-    width: 85px;
-    height: 71px;
-    right: -12px;
-    bottom: -4px;
+    width: 95px; height: 71px;
+    right: -22px; bottom: -4px;
   }
 
   .button-arrow {
@@ -163,11 +156,9 @@
   }
 
   .section-testimonials::after {
-    width: 51px;
-    height: 94px;
-    right: 0px;
-    bottom: -40px;
-    background-image: url(../../assets/images/leav-51x94.png);
+    width: 105px; height: 104px;
+    right: -50px; bottom: -45px;
+    transform: rotate(-16deg);
   }
 
   .section-testimonial-title {
