@@ -358,6 +358,31 @@ body {
   cursor: pointer;
 }
 
+.slide:nth-child(1) {
+  order: 1;
+}
+.slide:nth-child(2) {
+  order: 2;
+}
+.slide:nth-child(3) {
+  order: 3;
+}
+.slide:nth-child(4) {
+  order: 5;
+}
+.slide:nth-child(5) {
+  order: 4;
+}
+.slide:nth-child(6) {
+  order: 6;
+}
+.slide:nth-child(7) {
+  order: 7;
+}
+.slide:nth-child(8) {
+  order: 8;
+}
+
 .slide::before {
   content: "";
   position: absolute;
@@ -389,14 +414,14 @@ body {
   width: 366px;
   height: 60px;
   background: #FFF;
-  background-image: url(../../assets/images/banana-bamboo.png);
+  background-image: url(../../assets/images/banana-bamboo.webp);
+  background-position: 96.4% 47%;
   background-repeat: no-repeat;
-  background-position: 96% center;
 }
 
 .slide-description-meet {
-  background-image: url(../../assets/images/meet-fish.png);
-  background-position: 97% 40%;
+  background-image: url(../../assets/images/meet-fish.webp);
+  background-position: 97.5% 40%;
 }
 
 .slide-title {
@@ -503,7 +528,7 @@ body {
   line-height: 120%;
   color: #333B41;
   margin-left: 98px;
-  margin-bottom: 42px;
+  margin-bottom: 41px;
 }
 
 .friend-content {
@@ -528,7 +553,7 @@ body {
   font-size: 36px;
   line-height: 130%;
   color: #333B41;
-  margin-top: 42px;
+  margin-top: 44px;
 }
 
 .friend-infographic {
@@ -536,7 +561,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  margin-top: 4px;
+  margin-top: 3px;
 }
 
 .friend-infographic-card {
@@ -597,7 +622,7 @@ body {
 }
 
 .button-section-friend {
-  margin: 45px 0 60px;
+  margin: 44px 0 60px;
 }
 
 .section-testimonials {
@@ -629,7 +654,7 @@ body {
 }
 
 .testimonials {
-  width: 1160px;
+  width: 1457px;
   display: flex;
   justify-content: space-between;
 }

@@ -166,13 +166,13 @@
   .slide-description {
     width: 285px;
     height: 47px;
-    background-image: url(../../assets/images/banana-bamboo-26x29.png);
-    background-position: 96% center;
+    background-position: 96% 45%;
+    background-size: 9%;
   }
 
   .slide-description-meet {
-    background-image: url(../../assets/images/meet-fish-38x31.png);
-    background-position: 97% center;
+    background-position: 97% 45%;
+    background-size: 13%;
   }
 
   .slide-title {
@@ -228,10 +228,10 @@
   }
 
   .infographic-card-arrow::after {
-    width: 100px;
-    height: 100px;
-    right: -65px;
-    top: -18px;
+    width: 89px;
+    height: 29px;
+    right: -55px;
+    top: -17px;
     background-image: url(../../assets/icons/big-arrow-right-green.svg);
   }
 
