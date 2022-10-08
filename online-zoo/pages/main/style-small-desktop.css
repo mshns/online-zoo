@@ -90,7 +90,7 @@
   }
 
   .slider {
-    width: 1263px;
+    width: 2820px;
   }
 
   .slide {
@@ -117,12 +117,7 @@
   .slide:nth-child(6) {
     order: 3;
   }
-  .slide:nth-child(7) {
-    order: 7;
-  }
-  .slide:nth-child(8) {
-    order: 8;
-  }
+
 
   .slide-image {
     width: 294px;

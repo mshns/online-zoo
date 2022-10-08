@@ -32,31 +32,6 @@
 
   .burger-menu-icon {
     display: block;
-    position: relative;
-    width: 18px;
-    height: 10px;
-    cursor: pointer;
-  }
-
-  .burger-line1,
-  .burger-line2,
-  .burger-line3 {
-    position: absolute;
-    width: 100%;
-    height: 2px;
-    background-color: #ffffff;
-    border-radius: 2px;
-    transition: ease-in-out .2s;
-  }
-
-  .burger-line1 {
-    top: 0;
-  }
-  .burger-line2 {
-    top: 4px;
-  }
-  .burger-line3 {
-    top: 8px;
   }
 
   .section-container {
@@ -149,13 +124,32 @@
   }
 
   .slider {
-    width: 1230px;
+    width: 1800px;
   }
 
   .slide {
     width: 285px;
     height: 332px;
     margin-bottom: 92px;
+  }
+
+  .slide:nth-child(1) {
+    order: 1;
+  }
+  .slide:nth-child(2) {
+    order: 2;
+  }
+  .slide:nth-child(3) {
+    display: none;
+  }
+  .slide:nth-child(4) {
+    display: none;
+  }
+  .slide:nth-child(5) {
+    order: 5;
+  }
+  .slide:nth-child(6) {
+    order: 6;
   }
 
   .slide-image {
