@@ -1,50 +1,3 @@
-// slider
-
-const buttonLeft = document.querySelector(".button-arrow-left");
-const buttonRight = document.querySelector(".button-arrow-right");
-const slider = document.querySelector(".slider");
-
-const leftSlide = document.querySelector(".slider-left");
-const centerSlide = document.querySelector(".slider-center");
-const rightSlide = document.querySelector(".slider-right");
-
-
-const moveLeft = () => {
-  slider.classList.add("transition-left");
-};
-
-const moveRight = () => {
-  slider.classList.add("transition-right");
-};
-
-buttonLeft.addEventListener("click", moveLeft);
-buttonRight.addEventListener("click", moveRight);
-
-
-slider.addEventListener("animationend", function(animationEvent) {
-
-    const leftContent = document.querySelector(".slider-left").innerHTML;
-    const centerContent = document.querySelector(".slider-center").innerHTML;
-    const rightContent = document.querySelector(".slider-right").innerHTML;
-
-    if (animationEvent.animationName === "move-left") {
-      slider.classList.remove("transition-left");
-      leftSlide.innerHTML = rightContent;
-
-      centerSlide.innerHTML = leftContent;
-      rightSlide.innerHTML = centerContent;
-      rightSlide.firstElementChild.style.order = Math.round(Math.random()*5 + 1);
-      rightSlide.lastElementChild.style.order = Math.round(Math.random()*5 - 1);
-    } else {
-      slider.classList.remove("transition-right");
-      leftSlide.innerHTML = centerContent;
-      leftSlide.firstElementChild.style.order = Math.round(Math.random()*5 + 1);
-      leftSlide.lastElementChild.style.order = Math.round(Math.random()*5 - 1);
-      centerSlide.innerHTML = rightContent;
-      rightSlide.innerHTML = leftContent;
-    }
-  })
-
 // burger menu
 
 const burgerButton = document.querySelector(".burger-menu-icon");
@@ -70,20 +23,117 @@ menuCross.addEventListener('click',
 
 shadow.addEventListener('click',
   function() {
-    burgerMenu.classList.toggle("active");
+    burgerMenu.classList.remove("active");
     shadow.classList.toggle("active");
+    testimonialPopup.classList.remove("active");
   }
 );
 
 menuLink.forEach((el) => {
-    el.addEventListener('click',
-      function() {
-        burgerMenu.classList.toggle("active");
-        shadow.classList.toggle("active");
-      }
-    )
+  el.addEventListener('click',
+  function() {
+    burgerMenu.classList.toggle("active");
+    shadow.classList.toggle("active");
+  })
+})
+
+// testimonials popup
+
+const testimonial = document.querySelectorAll(".testimonial");
+const testimonialPopup = document.querySelector(".testimonial-popup");
+const testimonialCross = document.querySelector(".testimonial-popup-cross");
+const testimonialContainer = document.querySelector(".testimonial-popup-container");
+
+testimonial.forEach((el) => {
+  el.addEventListener('click',
+  function() {
+    shadow.classList.toggle("active");
+    testimonialPopup.classList.add("active");
+    testimonialContainer.innerHTML = el.innerHTML;
+    testimonialContainer.lastElementChild.classList.add("popup")
+  })
+})
+
+testimonialCross.addEventListener('click',
+  function() {
+    testimonialPopup.classList.remove("active");
+    shadow.classList.toggle("active");
   }
 );
+
+// testimonials control
+
+const range = document.getElementById('testimonial-control');
+const testimonials = document.querySelector('.testimonials');
+
+function rangeTestimonials() {
+  if (window.matchMedia("(min-width: 1440px)").matches) {
+    switch(range.value) {
+      case '0': testimonials.style.left = '0'; break;
+      case '1': testimonials.style.left = '-297px'; break;
+      case '2': testimonials.style.left = '-594px'; break;
+      case '3': testimonials.style.left = '-891px'; break;
+      case '4': testimonials.style.left = '-1188px'; break;
+      case '5': testimonials.style.left = '-1486px'; break;
+      case '6': testimonials.style.left = '-1783px'; break;
+      case '7': testimonials.style.left = '-2080px'; break;
+    }
+  } else {
+    switch(range.value) {
+      case '0': testimonials.style.left = '0'; break;
+      case '1': testimonials.style.left = '-323px'; break;
+      case '2': testimonials.style.left = '-646px'; break;
+      case '3': testimonials.style.left = '-969px'; break;
+      case '4': testimonials.style.left = '-1292px'; break;
+      case '5': testimonials.style.left = '-1615px'; break;
+      case '6': testimonials.style.left = '-1938px'; break;
+      case '7': testimonials.style.left = '-2261px'; break;
+    }
+  }
+}
+range.addEventListener('input', rangeTestimonials);
+
+// slider
+
+const buttonLeft = document.querySelector(".button-arrow-left");
+const buttonRight = document.querySelector(".button-arrow-right");
+const slider = document.querySelector(".slider");
+const leftSlide = document.querySelector(".slider-left");
+const centerSlide = document.querySelector(".slider-center");
+const rightSlide = document.querySelector(".slider-right");
+
+const moveLeft = () => {
+  slider.classList.add("transition-left");
+};
+
+const moveRight = () => {
+  slider.classList.add("transition-right");
+};
+
+buttonLeft.addEventListener("click", moveLeft);
+buttonRight.addEventListener("click", moveRight);
+
+slider.addEventListener("animationend", function(animationEvent) {
+  const leftContent = document.querySelector(".slider-left").innerHTML;
+  const centerContent = document.querySelector(".slider-center").innerHTML;
+  const rightContent = document.querySelector(".slider-right").innerHTML;
+
+  if (animationEvent.animationName === "move-left") {
+    slider.classList.remove("transition-left");
+    leftSlide.innerHTML = rightContent;
+    centerSlide.innerHTML = leftContent;
+    rightSlide.innerHTML = centerContent;
+    rightSlide.firstElementChild.style.order = Math.round(Math.random()*5 + 1);
+    rightSlide.lastElementChild.style.order = Math.round(Math.random()*5 - 1);
+  } else {
+    slider.classList.remove("transition-right");
+    leftSlide.innerHTML = centerContent;
+    leftSlide.firstElementChild.style.order = Math.round(Math.random()*5 + 1);
+    leftSlide.lastElementChild.style.order = Math.round(Math.random()*5 - 1);
+    centerSlide.innerHTML = rightContent;
+    rightSlide.innerHTML = leftContent;
+  }
+})
 
 // score
 

@@ -181,7 +181,7 @@
   }
 
   .testimonials {
-    width: 1585px;
+    width: 3523px;
   }
 
   .testimonial {
@@ -216,10 +216,6 @@
 
   .slider-control {
     width: 390px;
-  }
-
-  .slider-control::-webkit-slider-thumb {
-    width: 75px;
   }
 
   .testimonial-button {
