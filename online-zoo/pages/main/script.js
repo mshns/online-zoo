@@ -24,8 +24,9 @@ menuCross.addEventListener('click',
 shadow.addEventListener('click',
   function() {
     burgerMenu.classList.remove("active");
-    shadow.classList.toggle("active");
+    shadow.classList.remove("active");
     testimonialPopup.classList.remove("active");
+    shadow.classList.remove("popup");
   }
 );
 
@@ -47,7 +48,7 @@ const testimonialContainer = document.querySelector(".testimonial-popup-containe
 testimonial.forEach((el) => {
   el.addEventListener('click',
   function() {
-    shadow.classList.toggle("active");
+    shadow.classList.toggle("popup");
     testimonialPopup.classList.add("active");
     testimonialContainer.innerHTML = el.innerHTML;
     testimonialContainer.lastElementChild.classList.add("popup")
@@ -57,7 +58,7 @@ testimonial.forEach((el) => {
 testimonialCross.addEventListener('click',
   function() {
     testimonialPopup.classList.remove("active");
-    shadow.classList.toggle("active");
+    shadow.classList.toggle("popup");
   }
 );
 

@@ -1088,6 +1088,11 @@ body {
   background: rgba(0, 0, 0, .5);
 }
 
+.shadow.popup {
+  z-index: 250;
+  background: rgb(245, 247, 246, .9);
+}
+
 .burger-menu {
   position: fixed;
   width: 100%;
