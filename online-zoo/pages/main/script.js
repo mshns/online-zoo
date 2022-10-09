@@ -103,12 +103,55 @@ const leftSlide = document.querySelector(".slider-left");
 const centerSlide = document.querySelector(".slider-center");
 const rightSlide = document.querySelector(".slider-right");
 
+const card1 = document.getElementById("pandas");
+const card2 = document.getElementById("eagles");
+const card3 = document.getElementById("gorillas");
+const card4 = document.getElementById("sloth");
+const card5 = document.getElementById("cheetahs");
+const card6 = document.getElementById("penguins");
+const card7 = document.getElementById("alligators");
+const card8 = document.getElementById("gorillas2");
+
+let cards = [card1, card2, card3, card4, card5, card6, card7, card8]
+
+function shuffle(array) {
+  array.sort(() => Math.random() - 0.5);
+}
+
+function setSlider() {
+  shuffle(cards);
+  leftSlide.innerHTML = "";
+  rightSlide.innerHTML = "";
+
+  for (let i = 0; i < 8; i++) {
+    const divLeft = document.createElement('div');
+    divLeft.classList.add("slide");
+    divLeft.innerHTML = cards[i].innerHTML;
+    leftSlide.append(divLeft);
+
+    const divRight = document.createElement('div');
+    divRight.classList.add("slide");
+    divRight.innerHTML = cards[i].innerHTML;
+    rightSlide.append(divRight);
+  }
+}
+
+window.addEventListener('load', setSlider());
+
 const moveLeft = () => {
   slider.classList.add("transition-left");
+  buttonLeft.removeEventListener("click", moveLeft);
+  buttonRight.removeEventListener("click", moveRight);
+  buttonLeft.classList.add("disabled");
+  buttonRight.classList.add("disabled");
 };
 
 const moveRight = () => {
   slider.classList.add("transition-right");
+  buttonLeft.removeEventListener("click", moveLeft);
+  buttonRight.removeEventListener("click", moveRight);
+  buttonLeft.classList.add("disabled");
+  buttonRight.classList.add("disabled");
 };
 
 buttonLeft.addEventListener("click", moveLeft);
@@ -116,24 +159,21 @@ buttonRight.addEventListener("click", moveRight);
 
 slider.addEventListener("animationend", function(animationEvent) {
   const leftContent = document.querySelector(".slider-left").innerHTML;
-  const centerContent = document.querySelector(".slider-center").innerHTML;
   const rightContent = document.querySelector(".slider-right").innerHTML;
 
   if (animationEvent.animationName === "move-left") {
     slider.classList.remove("transition-left");
-    leftSlide.innerHTML = rightContent;
     centerSlide.innerHTML = leftContent;
-    rightSlide.innerHTML = centerContent;
-    rightSlide.firstElementChild.style.order = Math.round(Math.random()*5 + 1);
-    rightSlide.lastElementChild.style.order = Math.round(Math.random()*5 - 1);
   } else {
     slider.classList.remove("transition-right");
-    leftSlide.innerHTML = centerContent;
-    leftSlide.firstElementChild.style.order = Math.round(Math.random()*5 + 1);
-    leftSlide.lastElementChild.style.order = Math.round(Math.random()*5 - 1);
     centerSlide.innerHTML = rightContent;
-    rightSlide.innerHTML = leftContent;
   }
+
+  buttonLeft.addEventListener("click", moveLeft);
+  buttonRight.addEventListener("click", moveRight);
+  buttonLeft.classList.remove("disabled");
+  buttonRight.classList.remove("disabled");
+  setSlider();
 })
 
 // score

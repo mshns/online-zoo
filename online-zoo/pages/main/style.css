@@ -355,6 +355,19 @@ body {
   right: -82px;
 }
 
+.button-arrow.disabled {
+  background: #767474;
+  pointer-events: none;
+}
+
+.arrow-slider {
+  transition: ease-in-out .25s;
+}
+
+.button-arrow.disabled .arrow-slider {
+  transform: scale(1.5);
+}
+
 .slider-container {
   overflow: hidden;
   width: 100%;
@@ -378,7 +391,7 @@ body {
 
 .transition-right {
   animation-name: move-right;
-  animation-duration: .5s;
+  animation-duration: .75s;
 }
 
 @keyframes move-left {
@@ -388,26 +401,7 @@ body {
 
 .transition-left {
   animation-name: move-left;
-  animation-duration: .5s;
-}
-
-.slide:nth-child(1) {
-  order: 1;
-}
-.slide:nth-child(2) {
-  order: 2;
-}
-.slide:nth-child(3) {
-  order: 3;
-}
-.slide:nth-child(4) {
-  order: 4;
-}
-.slide:nth-child(5) {
-  order: 5;
-}
-.slide:nth-child(6) {
-  order: 6;
+  animation-duration: .75s;
 }
 
 .slider-left,
