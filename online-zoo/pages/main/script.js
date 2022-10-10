@@ -38,9 +38,24 @@ menuLink.forEach((el) => {
   })
 })
 
+// testimonials
+
+const testimonials = document.querySelector('.testimonials');
+const testimonial = document.querySelectorAll('.testimonial');
+
+function setTestimonials() {
+  for (let i = 0; i < 5; i++) {
+    const div = document.createElement('div');
+    div.classList.add("testimonial");
+    div.innerHTML = testimonial[i].innerHTML;
+    testimonials.append(div);
+  }
+}
+
+window.addEventListener('load', setTestimonials());
+
 // testimonials popup
 
-const testimonial = document.querySelectorAll(".testimonial");
 const testimonialPopup = document.querySelector(".testimonial-popup");
 const testimonialCross = document.querySelector(".testimonial-popup-cross");
 const testimonialContainer = document.querySelector(".testimonial-popup-container");
@@ -65,7 +80,6 @@ testimonialCross.addEventListener('click',
 // testimonials control
 
 const range = document.getElementById('testimonial-control');
-const testimonials = document.querySelector('.testimonials');
 
 function rangeTestimonials() {
   if (window.matchMedia("(min-width: 1440px)").matches) {

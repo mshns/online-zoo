@@ -133,25 +133,6 @@
     margin-bottom: 92px;
   }
 
-  .slide:nth-child(1) {
-    order: 1;
-  }
-  .slide:nth-child(2) {
-    order: 2;
-  }
-  .slide:nth-child(3) {
-    display: none;
-  }
-  .slide:nth-child(4) {
-    display: none;
-  }
-  .slide:nth-child(5) {
-    order: 5;
-  }
-  .slide:nth-child(6) {
-    order: 6;
-  }
-
   .slide-image {
     width: 285px;
     height: 285px;
