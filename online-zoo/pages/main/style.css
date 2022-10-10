@@ -400,7 +400,7 @@ body {
 
 @keyframes move-left {
   from {left: -100%;}
-  to {left: 0px;}
+  to {left: 0;}
 }
 
 .transition-left {
