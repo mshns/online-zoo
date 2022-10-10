@@ -391,6 +391,8 @@ body {
 .transition-right {
   animation-name: move-right;
   animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+
 }
 
 @keyframes move-left {
@@ -401,6 +403,7 @@ body {
 .transition-left {
   animation-name: move-left;
   animation-duration: 1s;
+  animation-timing-function: ease-in-out;
 }
 
 .slider-left,
