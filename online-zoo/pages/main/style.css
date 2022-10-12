@@ -832,6 +832,7 @@ body {
 }
 
 .slider-control::-webkit-slider-thumb {
+  position: relative;
   -webkit-appearance: none;
   appearance: none;
   width: 12.5%;
